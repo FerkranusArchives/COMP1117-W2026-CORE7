@@ -7107,7 +7107,7 @@ PrefabInstance:
     - target: {fileID: 6879752756298236294, guid: 7f42f5c054cc0fa4dadfa2c6b8601e51, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 766778bd4c7ccf441829f55b3cfacfbe, type: 2}
     - target: {fileID: 7866048626726982674, guid: 7f42f5c054cc0fa4dadfa2c6b8601e51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7161,6 +7161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 943824910875919645, guid: db1983f735b5d4c488a04428e22596a8, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 4212127876135019666, guid: db1983f735b5d4c488a04428e22596a8, type: 3}
       propertyPath: m_Name
       value: Background
@@ -7204,6 +7208,10 @@ PrefabInstance:
     - target: {fileID: 4593121455345623755, guid: db1983f735b5d4c488a04428e22596a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218159312259087922, guid: db1983f735b5d4c488a04428e22596a8, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
