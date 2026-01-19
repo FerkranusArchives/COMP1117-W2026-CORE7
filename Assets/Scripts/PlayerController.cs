@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -35,25 +36,25 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         ApplyMovement();
+        HealthBarControl();
+    }
+
+    private void HealthBarControl()
+    {
         healthBar.value = stats.CurrentHealth;
         if (healthBar.value <= 0) { healthBar.image.color = Color.clear; }
         else if (healthBar.value <= 50 && healthBar.value > 0)
         {
             healthBar.image.color = Color.red;
         }
-        
-        if (stats.IsDead)
-        {
-            Debug.Log("Player has perished.");
-        }
     }
-
 
     private void ApplyMovement()
     {
         float velocityX = moveInput.x * stats.MoveSpeed;
 
         rBody.linearVelocity = new Vector2(velocityX, rBody.linearVelocity.y);
+        
     }
 
     public void TakeDamage(int damageAmount)
@@ -62,4 +63,21 @@ public class PlayerController : MonoBehaviour
         Debug.Log($"Player took damage. Health left: {stats.CurrentHealth}");
     }
 
+    private bool isDead;
+    public bool IsDead
+    {
+        get { return isDead; }
+
+        set
+        {
+            if (stats.CurrentHealth <= 0)
+            {
+                isDead = true;
+            }
+            else { isDead = false; }
+        }
     }
+
+    
+
+}
