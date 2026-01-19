@@ -50,7 +50,7 @@ public int MaxHealth
         set
         {
             currentHealth = Mathf.Clamp(value, 0, 100);
-            Debug.Log("Health set to: { currentHealth}");
+            Debug.Log($"Health set to: {currentHealth}");
             //currentHealth = value;
         }
     }
