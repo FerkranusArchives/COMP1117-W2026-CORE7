@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float initialSpeed = 5;
     [SerializeField] private int initialHealth = 100;
 
-
+    public Slider healthBar;
     private PlayerStats stats;
     private Vector2 moveInput;
 
@@ -33,7 +34,9 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         ApplyMovement();
+        healthBar.value = stats.CurrentHealth;
     }
+
 
     private void ApplyMovement()
     {
