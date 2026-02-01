@@ -13,7 +13,7 @@ public class Enemy : Character
         startPos = transform.position;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         float leftBoundary = startPos.x - patrolDistance; // start pos - patrol dist
         float rightBoundary = startPos.x + patrolDistance;
