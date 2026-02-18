@@ -12,4 +12,9 @@ public class Gem : Collectible
         Debug.Log("Gem Collected!");
         base.OnCollect();
     }
+
+    public void DoGemBehaviour()
+    {
+        Debug.Log("Gem Spawned!");
+    }
 }

@@ -640,6 +640,42 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b866e411-3c7b-40b4-ab64-f03e4a05a77b
+    m_ActionName: 'Player/Rewind[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2007548375570591086, guid: 5691c2ef009a01c41b240ad7f5dd7c53, type: 3}
+        m_TargetAssemblyTypeName: SpawnManager, Assembly-CSharp
+        m_MethodName: OnSpawnCherry
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 027a6b95-0e57-47ab-b78a-7444d79f6781
+    m_ActionName: 'Player/Spawn Cherry[/Keyboard/1]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2007548375570591086, guid: 5691c2ef009a01c41b240ad7f5dd7c53, type: 3}
+        m_TargetAssemblyTypeName: SpawnManager, Assembly-CSharp
+        m_MethodName: OnSpawnGem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bc672333-ee98-45c6-bb4a-8448f84a2e94
+    m_ActionName: 'Player/Spawn Gem[/Keyboard/2]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -659,7 +695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   maxHealth: 100
-  playerController: {fileID: 6879752756298236294}
   healthBar: {fileID: 7335273078063409103}
   jumpForce: 12
   groundLayer:

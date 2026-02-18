@@ -11,4 +11,9 @@ public class Cherry : Collectible
         Debug.Log("Cherry Collected!");
         base.OnCollect();
     }
+
+    public void DoCherryBehaviour()
+    {
+        Debug.Log("Cherry Spawned!");
+    }
 }
